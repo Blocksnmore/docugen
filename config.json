@@ -1,0 +1,7 @@
+{
+    "main":"home",
+    "IMPORTANT1":"MAKE SURE THIS DOES NOT HAVE .MD",
+    "input":"/docs",
+    "output":"/output",
+    "IMPORTANT2":"YOU MUST SET INPUT AND OUTPUT TO `/DIRECTORY`"
+}

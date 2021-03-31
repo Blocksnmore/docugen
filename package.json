@@ -1,0 +1,16 @@
+{
+  "name": "docugen",
+  "version": "1.0.0",
+  "description": "Simple & Modern MD to HTML docs generator",
+  "main": "compiler/index.js",
+  "scripts": {
+    "start": "node compiler/index.js"
+  },
+  "keywords": [],
+  "author": "Blocks_n_more",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^2.0.1",
+    "sanitize-html": "^2.3.3"
+  }
+}
