@@ -1,6 +1,7 @@
 const fs = require("fs");
 const marked = require("marked");
 const sanitizehtml = require("sanitize-html");
+const styler = require("./styler.js");
 console.log("Starting DocuGen Version " + require("../package.json").version);
 var docjson = [];
 
@@ -52,7 +53,7 @@ async function docugen(directory) {
             directory +
             (directory === "" ? "" : "/")
         );
-        fs.writeFileSync(dir, md);
+        fs.writeFileSync(dir, new styler(md).md);
       });
     }
   );
