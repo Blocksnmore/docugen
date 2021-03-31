@@ -1,6 +1,6 @@
 module.exports = class {
   constructor(md) {
-    md = "<style>"+require("fs").readFileSync("./compiler/css.css", "utf8")+"</style>" + md;
-    this.md = '<article class="markdown-body">' + md + "</article>";
+    md = '<article class="markdown-body">' + md + "</article>";
+    this.md = '<link rel="stylesheet" href="/styles.css">' + md.split("\n").join("");
   }
 };
